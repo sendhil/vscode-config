@@ -91,16 +91,16 @@
     "command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
 },
 {
-    "key": "ctrl+shift+q",
+    "key": "ctrl+shift+alt+cmd+m",
     "command": "workbench.action.toggleMaximizedPanel"
 },
 {
-    "key": "ctrl+shift+j",
+    "key": "shift+cmd+]",
     "command": "workbench.action.terminal.focusNext",
     "when" : "terminalFocus"
 },
 {
-    "key": "ctrl+shift+k",
+    "key": "shift+cmd+[",
     "command": "workbench.action.terminal.focusPrevious",
     "when" : "terminalFocus"
 },
@@ -197,7 +197,7 @@
     "when": "hasSearchResult && searchViewletFocus"
 },
 {
-    "key": "ctrl+`",
+    "key": "shift+cmd+t",
     "command": "workbench.action.terminal.toggleTerminal",
 },
 {
@@ -272,5 +272,29 @@
 {
     "key": "shift+escape",
     "command": "notifications.clearAll"
-}
+},
+{
+    "key": "ctrl+shift+alt+cmd+up",
+    "command": "workbench.action.terminal.scrollUp",
+    "when": "terminalFocus && terminalProcessSupported"
+},
+{
+    "key": "alt+cmd+pageup",
+    "command": "-workbench.action.terminal.scrollUp",
+    "when": "terminalFocus && terminalProcessSupported"
+},
+{
+    "key": "shift+cmd+t",
+    "command": "-workbench.action.reopenClosedEditor"
+},
+{
+    "key": "ctrl+shift+alt+cmd+down",
+    "command": "workbench.action.terminal.scrollDown",
+    "when": "terminalFocus && terminalProcessSupported"
+},
+{
+    "key": "alt+cmd+pagedown",
+    "command": "-workbench.action.terminal.scrollDown",
+    "when": "terminalFocus && terminalProcessSupported"
+},
 ]
